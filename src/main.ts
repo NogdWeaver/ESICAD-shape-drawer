@@ -4,6 +4,7 @@ import { FormeGeometrique } from "./models/forme-géométrique";
 import { Point } from "./models/point";
 import { Rectangle } from "./models/rectangle";
 import { Triangle } from "./models/triangle";
+import { square } from "./models/square";
 
 const shapeProps = document.querySelectorAll(".shape-props");
 const fieldsetShapeProps = document.querySelector("#fieldset-shape-props");

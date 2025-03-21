@@ -2,6 +2,7 @@ import { Cercle } from "./cercle";
 import { FormeGeometrique } from "./forme-géométrique";
 import { Rectangle } from "./rectangle";
 import { Triangle } from "./triangle";
+import { square } from "./square";
 
 /**
     La classe Drawer (dessinatrice) est capable d'interagir 
