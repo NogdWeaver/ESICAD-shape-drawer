@@ -1,0 +1,45 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+}
+
+form .shape-props,
+#fieldset-shape-props,
+#shapes-description {
+    display: none;
+}
+
+form .shape-props.active,
+#fieldset-shape-props.active,
+#shapes-description.active {
+    display: block;
+}
+
+canvas#canvas {
+    width: 800px;
+    height: 600px;
+    border: 1px solid white;
+    padding: 0.2rem;
+}
+.container {
+    display: flex;
+    align-items: stretch;
+}
