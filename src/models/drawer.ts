@@ -2,7 +2,7 @@ import { Cercle } from "./cercle";
 import { FormeGeometrique } from "./forme-géométrique";
 import { Rectangle } from "./rectangle";
 import { Triangle } from "./triangle";
-import { square } from "./square";
+import { Square } from "./square";
 
 /**
     La classe Drawer (dessinatrice) est capable d'interagir 
@@ -131,6 +131,9 @@ export class Drawer {
                 break;
             case Cercle:
                 this.drawCircle(shape as Cercle);
+                break;
+            case Square:
+                this.drawRectangle(shape as Rectangle);
                 break;
             // A COMPLETER POUR LE CARRE
             default:

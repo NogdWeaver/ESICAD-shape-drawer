@@ -1,33 +1,25 @@
 import { Point } from "./point";
 import { Rectangle } from "./rectangle";
 
-export class square extends Rectangle{
-
-    private side: number;
+export class Square extends Rectangle{
 
     constructor(
-        origin: Point = new Point(),
-        side: number = 3,
-    ){
-        super(origin);
-        this.side = side;
+        point: Point, longueur : number){
+        super(point, longueur, longueur);
     }
 
-    public getPerimetre(): number {
-        return this.side * this.side;
+    public setLargeur(larg: number): void {
+        super.setLargeur(larg);
+        super.setLongueur(larg)
     }
 
-    public setside(verifside : number){
-        if (verifside > 0 ) {
-            this.side = verifside;
-        }
+    public setLongueur(long: number): void {
+        super.setLongueur(long);
+        super.setLargeur(long)
     }
 
-    public getside(){
-        return this.side;
-    }
 
     public toString(): string {
-        return `Carré d'origine ${this.getOrigin().toString()}, de côté ${this.getside()}`
+        return `Carré d'origine ${this.getOrigin().toString()}, de côté ${this.getLongueur()}`
     }
 }

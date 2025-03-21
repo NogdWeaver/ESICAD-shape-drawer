@@ -4,7 +4,7 @@ import { FormeGeometrique } from "./models/forme-géométrique";
 import { Point } from "./models/point";
 import { Rectangle } from "./models/rectangle";
 import { Triangle } from "./models/triangle";
-import { square } from "./models/square";
+import { Square } from "./models/square";
 
 const shapeProps = document.querySelectorAll(".shape-props");
 const fieldsetShapeProps = document.querySelector("#fieldset-shape-props");
@@ -171,7 +171,10 @@ form.addEventListener("submit", (event) => {
             cas du carré : A IMPLEMENTER
          */
         case "square":
-            alert("Fonctionnalité non implémentée !");
+            newShape = new Square(
+                new Point(params.originX as number, params.originY as number),
+                params.length as number,
+            )
             break;
         case null:
         default:
